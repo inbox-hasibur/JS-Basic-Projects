@@ -1,6 +1,6 @@
 ### JS & WEB Basic Projects
 - CLO Functions
-- Hypotenuse calc practice program 📐
+- Hypotenuse calculation program 📐
 - Counter program #️⃣
 - Random number generator 🎲
 - Number guessing game 🔢
