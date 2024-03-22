@@ -1,45 +1,46 @@
+// Mini Projects
+// 01.Hypotenuse calc practice program 📐
+let h1;  let b1;  let r1;
+/* h1 = window.prompt("Enter Height: ");    h1 = Number(a1);
+b1 = window.prompt("Enter Base: ");         b1 = Number(b1);
+r1 = Math.sqrt(Math.pow(h1,2) + Math.pow(b1,2));
+console.log("√(",a1,"² +",b1,"²)=",c1); */
+document.getElementById("submit1").onclick = function(){
+    h1 = document.getElementById("inputH").value;
+    b1 = document.getElementById("inputB").value;
+    r1 = Math.sqrt(Math.pow(h1,2) + Math.pow(b1,2));
+    document.getElementById("h1").innerHTML = h1;
+    document.getElementById("b1").innerHTML = b1;
+    document.getElementById("r1").innerHTML = r1;
+}
+// 02.Counter program #️⃣
+let counter = 0;
+document.getElementById("dec2").onclick = function(){counter=counter-1;  document.getElementById("counter2").innerHTML = counter;}
+document.getElementById("rst2").onclick = function(){counter=0; document.getElementById("counter2").innerHTML = counter;} 
+document.getElementById("inc2").onclick = function(){counter=counter+1; document.getElementById("counter2").innerHTML = counter;}
+// 03.Random number generator 🎲
+document.getElementById("button3").onclick = function(){
+    document.getElementById("x3").innerHTML = Math.floor(Math.random()*6)+1;;
+    document.getElementById("y3").innerHTML = Math.floor(Math.random()*6)+1;
+    document.getElementById("z3").innerHTML = Math.floor(Math.random()*6)+1;
+}
+// 04.Number guessing game 🔢
+let cpu = Math.floor(Math.random()*10)+1;     let c4=0;
+document.getElementById("button4").onclick = function(){ 
+    c4 = c4+1;    let guess = document.getElementById("input4").value;
+    if (cpu==guess){ window.alert(`${guess} is correct! & it took ${c4} times!`);}
+    else if (cpu>guess) {window.alert(`${guess} is too small!`);}
+    else {window.alert(`${guess} is too large!`);}
+}
 
-
-
-
+// Calculator
 // Learning Outcome 
-// Functions
+/* Functions
 Print - console.log("msg");    
 PopUp - window.alert("msg");
 Prompt - x = window.prompt("msg");   // PopUp+Input
 DOM - document.getElementById("id_name").onclick = funxtion(){}
       document.getElementById("id_name").innerHTML = x;
-
-
-// Mini Projects
-// Hypotenuse calc practice program 📐
-let a;  let b;  let c;
-a = window.prompt("Enter Side A: ");    a = Number(a);
-b = window.prompt("Enter Side B: ");    b = Number(b);
-c = Math.sqrt(Math.pow(a,2) + Math.pow(b,2));
-    console.log("√(",a,"² +",b,"²)=",c);
-
-// Counter program #️⃣
-let counter = 0;
-document.getElementById("dec").onclick = function(){counter=counter-1;  document.getElementById("counter").innerHTML = counter;}
-document.getElementById("rst").onclick = function(){counter=0; document.getElementById("counter").innerHTML = counter;} 
-document.getElementById("inc").onclick = function(){counter=counter+1; document.getElementById("counter").innerHTML = counter;}
-
-// Random number generator 🎲
-let x = Math.floor(Math.random()*6)+1;  console.log("X: ",x);
-document.getElementById("button").onclick = function(){
-    document.getElementById("x").innerHTML = x;
-    document.getElementById("y").innerHTML = Math.floor(Math.random()*6)+1;
-    document.getElementById("x").innerHTML = Math.floor(Math.random()*6)+1;
-}
-
-// Number guessing game 🔢
-let x = Math.floor(Math.random()*10)+1;     let c=0;
-document.getElementById("button").onclick = function(){ 
-    c = c+1;    let y = document.getElementById("input").value;
-    if (x==y){ window.alert(`${y} is correct! & it took ${counter} times!`);}
-    else if (x>y) {window.alert(`${y} is too small!`);}
-    else {window.alert(`${y} is too large!`);}
-}
-
-// Calculator
+      x = document.getElementById("id_name").innerHTML;
+      x = document.getElementById("id_name").value;
+*/
