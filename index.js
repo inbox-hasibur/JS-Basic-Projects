@@ -32,6 +32,16 @@ document.getElementById("button4").onclick = function(){
     else if (cpu>guess) {window.alert(`${guess} is too small!`);}
     else {window.alert(`${guess} is too large!`);}
 }
+// 05.Temperature conversion program 🌡️
+document.getElementById("submit5").onclick = function (){
+    let temperature = document.getElementById("input5").value; let temp5=0;
+    if (document.getElementById("c5").checked){ temp5 = (5/9)*(temperature-32);
+        document.getElementById("r5").innerHTML = `Temparature: ${temperature} F = ${temp5.toFixed(2)} C`;}
+    else if (document.getElementById("f5").checked){ temp5 = ((9/5)*temperature)+32;
+        document.getElementById("r5").innerHTML = `Temparature: ${temperature} C = ${temp5.toFixed(2)} F`;}
+    else{ document.getElementById("r5").innerHTML = `Please, Select a temparature unit !!!`}
+}
+
 
 // Calculator
 // Learning Outcome 
@@ -43,4 +53,5 @@ DOM - document.getElementById("id_name").onclick = funxtion(){}
       document.getElementById("id_name").innerHTML = x;
       x = document.getElementById("id_name").innerHTML;
       x = document.getElementById("id_name").value;
+      bool = document.getElementById("input_radio").checked;
 */
